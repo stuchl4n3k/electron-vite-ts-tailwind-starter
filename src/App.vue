@@ -1,6 +1,7 @@
 <template>
   <div class="h-screen w-screen flex flex-col pt-12">
     <TopBar />
+    <HelloWorld msg="Hello Electron + Vite + Tailwind + TypeScript" />
     <!-- [ HERE COMES YOUR CONTENT ] -->
     <transition name="fade" appear>
       <div class="flex flex-col items-center justify-center h-full pb-0">
@@ -10,13 +11,16 @@
   </div>
 </template>
 
-<script>
-import TopBar from '/~/components/layout/TopBar.vue'
+<script lang="ts">
+import TopBar from './components/layout/TopBar.vue'
+import HelloWorld from './components/HelloWorld.vue'
 
-export default {
+import { defineComponent } from 'vue'
+export default defineComponent({
   name: 'App',
   components: {
     TopBar,
+    HelloWorld,
   },
-}
+});
 </script>

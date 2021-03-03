@@ -10,7 +10,8 @@
     "build": "run-s build:*",
     "build:vite": "vite build --base=./",
     "build:electron": "electron-builder build",
-    "postinstall": "install-app-deps"
+    "electron:generate-icons": "electron-icon-builder --input=./public/icon.png --output=build --flatten",
+    "postinstall": "install-app-deps; npm run electron:generate-icons"
   },
   "dependencies": {
     "electron-context-menu": "^2.5.0",
@@ -20,13 +21,15 @@
     "vue": "^3.0.6"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^1.1.4",
-    "@vue/compiler-sfc": "^3.0.6",
-    "electron": "^11.2.3",
-    "electron-builder": "^22.9.1",
+    "@vitejs/plugin-vue": "^1.1.5",
+    "@vue/compiler-sfc": "^3.0.7",
+    "electron": "^12.0.0",
+    "electron-builder": "^22.10.5",
+    "electron-icon-builder": "^2.0.1",
     "electron-reloader": "^1.2.0",
     "npm-run-all": "^4.1.5",
-    "vite": "^2.0.4"
+    "typescript": "^4.2.2",
+    "vite": "^2.0.5"
   },
   "keywords": [
     "electron",

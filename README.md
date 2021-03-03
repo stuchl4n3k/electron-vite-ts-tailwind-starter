@@ -1,17 +1,17 @@
-# Electron 11 + Vite 2 + Tailwind 2 - Starter
+# Electron 12 + Vite 2 + Tailwind 2 + TypeScript - Starter
 
-![Electron + Vite + Tailwind Starter](screenshot.png)
+![Electron + Vite + Tailwind + TypeScript Starter](public/logo.png)
 
-This Starter utilizes [Electron](https://electronjs.org/), [Vite](https://github.com/vitejs/vite) and [Tailwind](https://tailwindcss.com/) in combination. It trys to adhare the best practices mentioned in the [Talk by Kilian Valkhof](https://www.youtube.com/watch?v=fw4PmPaghyU)
+This Starter utilizes [Electron](https://electronjs.org/), [Vite](https://github.com/vitejs/vite), [Tailwind](https://tailwindcss.com/) and [TypeScript](https://typescriptlang.org) in combination. It trys to adhare the best practices mentioned in the [Talk by Kilian Valkhof](https://www.youtube.com/watch?v=fw4PmPaghyU)
 
 ## Installation
 
-`yarn`
+`make deps`
 
 ## Development
 
-`yarn dev`
+`make dev`
 
 ## Build
 
-`yarn build`
+`make build`
